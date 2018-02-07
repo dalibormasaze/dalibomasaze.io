@@ -1,6 +1,7 @@
 <template>
-    <div class="centered">
+    <div class="text-center">
         <h1>{{ title }}</h1>
+        <br><br>
         <h3 v-for="mass in massage">{{ mass.line }}{{mass.price}}</h3>
         <h3 v-for="pm in par_mass">{{pm.line}}{{pm.price}}</h3>
     </div>
@@ -27,7 +28,7 @@
     }
 </script>
 <style>
-    #cenovnik {
-        margin-left: 5%;
-    }
+   h3 {
+       font-size: 30px;
+   }
 </style>

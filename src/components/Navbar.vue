@@ -1,10 +1,10 @@
 <template>
-            <div class="container">
+            <div class="container" >
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div>
                        <nav>
                         <ul class="nav nav-pills pull-right" v-for="nav in navigation">
-                            <li><a :href="nav.link" >{{ nav.page }}</a></li>
+                            <li><a :href="nav.link">{{ nav.page }}</a></li>
                         </ul>
                         <img src="src/assets/dalibor logo centar za masazu.png" alt="" width="180px" id="logo">
                         </nav>
@@ -23,7 +23,7 @@
                     {link:'/#/kontakt', page: 'Kontakt'},
                     {link:'/#/cenovnik', page: 'Cenovnik'},
                     {link:'/#/galerija', page: 'Galerija'},
-                    {link:'/#/o_masazi', page: 'O masazi'},
+                    {link:'/#/o_masazi', page: 'O masaži'},
                     {link:'/#/', page: 'Početna'},
                 ],
 
@@ -44,18 +44,23 @@
         background-image: url("../assets/vrata gore0.jpg");
         background-size: contain;
         border: ridge 2px green;
-        box-shadow: black 4px 4px 4px;
+        box-shadow: black 5px 5px 5px;
         z-index: 100;
     }
     nav>ul {
-        font-size: 23px;
-        padding-top: 0.5%;
+        padding-top: 0.3%;
+        font-weight: 800;
     }
     ul>li>a {
+        font-size: 28px;
         color: sienna;
         border: black solid 2px;
         border-radius: 2%;
-        box-shadow: green 2px 2px 2px;
+        box-shadow: green 3px 3px 3px;
         margin-right: 4px;
+    }
+    ul>li>a:hover {
+        position: relative;
+        bottom: 2px;
     }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div id="app">
       <navbar id="navbar"></navbar>
-      <div class="container">
-          <img src="src/assets/background_panel.png" alt="" id="panel">
+      <div id="panel">
+          <router-view style="padding: 10%;"></router-view>
       </div>
-      <router-view></router-view>
+
       <foot class="foot"></foot>
   </div>
 </template>
@@ -31,15 +31,32 @@ export default {
 </script>
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+    }
+    p {
+        font-weight: 800;
+        color: black;
+        font-size: 24px;
+    }
+    h1, h2, h3 {
+        color: #80c548;
+    }
 body {
     background-image: url("./assets/sredina gore0.jpg");
     background-size: 107%;
     background-attachment: fixed;
+    font-family: 'Dancing Script', cursive;
+
 }
+
 #navbar {
-    position: fixed;
+    position: absolute;
+    width: 90%;
     top: 2.5%;
-    left: 6%;
+    left: 5%;
     opacity: 0.8;
     z-index: 1;
 
@@ -55,18 +72,19 @@ body {
     }
 
 #panel {
-    width: 90%;
-    margin-left: 5%;
+    background-image: url("./assets/background_panel.png");
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position: bottom;
+    width: 85%;
+    max-height: calc(100%+ 20px);
     margin-top: 10%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     box-shadow: black 7px 5px 3px;
     opacity: 0.8;
     border-radius: 7%;
     border: inset 2px darkolivegreen;
 }
-.centered {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 </style>

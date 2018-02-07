@@ -1,6 +1,6 @@
 <template>
-    <div class="centered">
-        <h2 v-for="con in contact" ><a :href="con.link" target="_blank">{{ con.address }}</a></h2>
+    <div >
+        <h2 v-for="con in contact" ><a :href="con.link" target="_blank" id="contact">{{ con.address }}</a></h2>
     </div>
 </template>
 <script>
@@ -19,3 +19,8 @@
         }
     }
 </script>
+<style>
+    #contact {
+        text-align: center;
+    }
+</style>
