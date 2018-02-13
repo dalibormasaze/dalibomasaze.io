@@ -39,7 +39,7 @@ export default {
     p {
         font-weight: 800;
         color: black;
-        font-size: 24px;
+        font-size: 1.5em;
     }
     h1, h2, h3 {
         color: #80c548;
@@ -72,10 +72,7 @@ body {
     }
 
 #panel {
-    background-image: url("./assets/background_panel.png");
-    background-size: 50%;
-    background-attachment: fixed;
-    background-position: bottom;
+    background-color: whitesmoke;
     width: 85%;
     max-height: calc(100%+ 20px);
     margin-top: 10%;
